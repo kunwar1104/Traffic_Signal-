@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+//  For Traffic Signal Lights
+.T-Lights{
+    margin-left: 50px;
+};
+#traffic-signal{
+    border: 8px solid black;
+    padding: 25px 31px;
+    width: 50px;
+    border-radius: 50px;
+}
+#traffic-signal > div{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: .3;
+    position: relative;
+  right: 25px;
+}
+
+.green_Css{
+    background-color: green;
+}
+.yellow_Css{
+    background-color: yellow;
+}
+.red_Css{
+    background-color: red;
+}
+// For Number Showing 
+.contaner{
+    background-color: whitesmoke;
+    height: 100vh;
+    width: 100vw;
+}
+.signals{
+    width: 100px;
+}
+.sig-3{
+    position: relative;
+    left: 530px;}
+.Sig-3-Light{
+    margin-left: 45px;
+}

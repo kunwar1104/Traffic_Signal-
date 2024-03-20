@@ -1,0 +1,101 @@
+<div class="contaner " >
+
+    <div class="contaner pt-5">
+
+        <div class="row pt-5">
+
+            <div class="col  d-flex justify-content-center    ">
+                <!-- <div class="row"> -->
+                <div class="d-flex     btn btn-secondary signals">
+                    <div class="   mt-5">
+                                           <!-- Side 1 -->
+                        <!-- <button class="btn " style="color: white;" >Signal 1</button> -->
+                        <button class="btn mb-2 ms-auto  " *ngIf="isHideNumbers">Green{{green}}</button>
+                        <button class="btn mt-3" *ngIf="isHideNumbers">Yellow{{yellow}}</button>
+                        <button class="btn mt-4" *ngIf="isHideNumbers">Red{{red}}</button>
+                    </div>
+                    <div class="T-Lights">
+                        <div id="traffic-signal">
+                            <div class="green_Css" [ngStyle]="greenLightStyle"></div>
+                            <div class="yellow_Css" [ngStyle]="yellowLightStyle"></div>
+                            <div class="red_Css" [ngStyle]="redLightStyle"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row pt-5">
+
+            <div class="col ms-5">
+                <div class=" d-flex  btn btn-secondary signals">
+                    <div class="">
+                                           <!-- Side 2 -->
+                        <button class="btn mb-2 ms-auto  " *ngIf="isHideNumbers">Green{{side_Two_Green}}</button>
+                        <button class="btn mt-3" *ngIf="isHideNumbers">Yellow{{side_Two_Yellow}}</button>
+                        <button class="btn mt-4" *ngIf="isHideNumbers">Red{{side_Two_Red}}</button>
+                    </div>
+                    <div class="T-Lights">
+                        <div id="traffic-signal">
+                            <div class="green_Css" [ngStyle]="greenLightStyle"></div>
+                            <div class="yellow_Css" [ngStyle]="yellowLightStyle"></div>
+                            <div class="red_Css" [ngStyle]="redLightStyle"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col ">
+
+                <div class="d-flex   btn btn-secondary signals sig-3">
+                    <div class="Sig-3-Light">
+                                           <!-- Side 3 -->
+                        <button class="btn mb-2 ms-auto  " *ngIf="isHideNumbers">Green{{side_Three_Green}}</button>
+                        <button class="btn mt-3" *ngIf="isHideNumbers">Yellow{{side_Three_Yellow}}</button>
+                        <button class="btn mt-4" *ngIf="isHideNumbers">Red{{side_Three_Red}}</button>
+                    </div>
+
+                    <div class="">
+                        <div id="traffic-signal">
+                            <div class="green_Css" [ngStyle]="greenLightStyle"></div>
+                            <div class="yellow_Css" [ngStyle]="yellowLightStyle"></div>
+                            <div class="red_Css" [ngStyle]="redLightStyle"></div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row mt-5">
+
+            <div class="col pt-5 d-flex justify-content-center">
+                <div class=" d-flex btn btn-secondary signals">
+                    <div class="">
+                                           <!-- Side 4 -->
+                        <button class="btn mb-2 ms-auto  " *ngIf="isHideNumbers">Green{{side_Four_Green}}</button>
+                        <button class="btn mt-3" *ngIf="isHideNumbers">Yellow{{side_Four_Yellow}}</button>
+                        <button class="btn mt-4" *ngIf="isHideNumbers">Red{{side_Four_Red}}</button>
+                    </div>
+                    <div class="T-Lights"></div>
+                    <div id="traffic-signal">
+                        <div class="green_Css" [ngStyle]="greenLightStyle"></div>
+                        <div class="yellow_Css" [ngStyle]="yellowLightStyle"></div>
+                        <div class="red_Css" [ngStyle]="redLightStyle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" mt-5 text-center">
+            <button class="btn btn-primary" (click)="start()"> &nbsp;Start&nbsp; </button>
+        </div>
+
+    </div>
+</div>
